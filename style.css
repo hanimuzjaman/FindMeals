@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.inputBox {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inputButton {
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inputButton:hover {
+    background: #555;
+}
+.upperSection{
+    padding:20px 0;
+}
+
+.searchResultHeading {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipeContainer {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipeContainer img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mealName {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.getRecipeBtn {
+    padding: 8px 12px;
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.getRecipeBtn:hover {
+    background: #e64a19;
+}
+
+/* Modal styles */
+.detailRecipe {
+    display: none;
+    /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    padding: 40px 20px;
+    z-index: 1000;
+}
+
+.detailRecipeContainer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.CloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.instruction h4{
+ color: #666666;
+}
+
+.photoInstruction {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.ImageInstruction { 
+    width: 100px;
+    border-radius: 50%;
+}
+
+.recipeInstruction {
+    text-align: left;
+    line-height: 1.4;
+}
+
+.watchVideo {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.watchVideo:hover {
+    background: #1976d2;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
